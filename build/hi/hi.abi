@@ -1,0 +1,1849 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Jun 14 16:55:51 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "accancelmcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "accancelsell",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "acccancelfp",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "acceptor",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "apply_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "approve_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "tx_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "accfeerate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "base",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_acceptor_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_acceptor_out",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_buy",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_sell",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "accminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "dummy",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_acceptor_in_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_acceptor_out_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_buy_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_sell_min",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "stake",
+                    "type": "asset"
+                },
+                {
+                    "name": "order_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "preorder_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "acmatchbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addblacklist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accountname",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "applyac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "txid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "applyfastpay",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "paychannel",
+                    "type": "int8"
+                },
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "applymcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "applymerts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "approveac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acount",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "approvemerts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accout",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "approvesell",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "txid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "banmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "bgaprovesell",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgcancelbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgcancelfp",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgcancelmcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgcancelsell",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgmatchbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "bgmatchmcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "bgunfrozbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgunfrozenfp",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bgunfrozenpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "buygac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "buyinfo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "buy_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "match_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "unfrozen_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "cancelbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "cancelmcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "cleanexpired",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "maximum_supply",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "fastpay",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "paychannel",
+                    "type": "uint8"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "buy_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "match_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "unfrozen_tp",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "fineac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "fine",
+                    "type": "asset"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "hello",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "matchacsell",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "mcpayment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "apply_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "complete_tp",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "merchant",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "apply_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "approve_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "tx_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "merfeerate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "base",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_merchant_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_merchant_out",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_buy",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_sell",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_payment",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_bc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_alipay_bc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_we_bc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_we_qr",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_alipay_qr",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_alipay_h5",
+                    "type": "uint64"
+                },
+                {
+                    "name": "merchant_fp_flashpay",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "merminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "dummy",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_merchant_in_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_merchant_out_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_buy_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_sell_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_payment_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_bc_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_alipay_bc_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_we_bc_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_we_qr_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_alipay_qr_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_alipay_h5_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "merchant_fp_flashpay_min",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "removeac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmblacklist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accountname",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "rmmerts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "sellgac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "sellinfo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sellid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "sell_tp",
+                    "type": "time_point"
+                },
+                {
+                    "name": "complete_tp",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "setaccminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setaccrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "feerate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setmerminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setmertrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "feerate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setsysminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setsysrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "feerate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setuser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "stake",
+                    "type": "asset"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setuseracc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "stake",
+                    "type": "asset"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setusermert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "stake",
+                    "type": "asset"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setuserrate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "feerate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setusrminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint8"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "sysfeerate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "base",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_system_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_system_out",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "sysminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "dummy",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_system_in_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_system_out_min",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "transferid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "uuid",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "transfergac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "trid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "unfrozenbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                },
+                {
+                    "name": "buyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "unfrozenfp",
+            "base": "",
+            "fields": [
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "acceptor",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "unfrozenmcpo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "merchant",
+                    "type": "name"
+                },
+                {
+                    "name": "orderid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "userfeerate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "base",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_merchant",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_acceptor",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_user_in",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_system",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_merchant_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_acceptor_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_user_to_user_out",
+                    "type": "uint64"
+                },
+                {
+                    "name": "transfer_system_to_user",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_buy",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user_sell",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "userminfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "dummy",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_merchant_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_acceptor_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_user_in_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_system_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_merchant_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_acceptor_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_user_to_user_out_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "transfer_system_to_user_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_buy_min",
+                    "type": "asset"
+                },
+                {
+                    "name": "user_sell_min",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "accancelmcpo",
+            "type": "accancelmcpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "accancelsell",
+            "type": "accancelsell",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "acccancelfp",
+            "type": "acccancelfp",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "acmatchbuy",
+            "type": "acmatchbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addblacklist",
+            "type": "addblacklist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "applyac",
+            "type": "applyac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "applyfastpay",
+            "type": "applyfastpay",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "applymcpo",
+            "type": "applymcpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "applymerts",
+            "type": "applymerts",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "approveac",
+            "type": "approveac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "approvemerts",
+            "type": "approvemerts",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "approvesell",
+            "type": "approvesell",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgaprovesell",
+            "type": "bgaprovesell",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgcancelbuy",
+            "type": "bgcancelbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgcancelfp",
+            "type": "bgcancelfp",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgcancelmcpo",
+            "type": "bgcancelmcpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgcancelsell",
+            "type": "bgcancelsell",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgmatchbuy",
+            "type": "bgmatchbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgmatchmcpo",
+            "type": "bgmatchmcpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgunfrozbuy",
+            "type": "bgunfrozbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgunfrozenfp",
+            "type": "bgunfrozenfp",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bgunfrozenpo",
+            "type": "bgunfrozenpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "buygac",
+            "type": "buygac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelbuy",
+            "type": "cancelbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelmcpo",
+            "type": "cancelmcpo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cleanexpired",
+            "type": "cleanexpired",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "fineac",
+            "type": "fineac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "hello",
+            "type": "hello",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "matchacsell",
+            "type": "matchacsell",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removeac",
+            "type": "removeac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmblacklist",
+            "type": "rmblacklist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmmerts",
+            "type": "rmmerts",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "sellgac",
+            "type": "sellgac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setaccminfee",
+            "type": "setaccminfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setaccrate",
+            "type": "setaccrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmerminfee",
+            "type": "setmerminfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmertrate",
+            "type": "setmertrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setsysminfee",
+            "type": "setsysminfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setsysrate",
+            "type": "setsysrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setuser",
+            "type": "setuser",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setuseracc",
+            "type": "setuseracc",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setusermert",
+            "type": "setusermert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setuserrate",
+            "type": "setuserrate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setusrminfee",
+            "type": "setusrminfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfergac",
+            "type": "transfergac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unfrozenbuy",
+            "type": "unfrozenbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unfrozenfp",
+            "type": "unfrozenfp",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unfrozenmcpo",
+            "type": "unfrozenmcpo",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "acceptors",
+            "type": "acceptor",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accfeerate",
+            "type": "accfeerate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accminfee",
+            "type": "accminfee",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "blacklist",
+            "type": "banmember",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "buytable",
+            "type": "buyinfo",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "fastpays",
+            "type": "fastpay",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "mcpayments",
+            "type": "mcpayment",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "merchants",
+            "type": "merchant",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "merfeerate",
+            "type": "merfeerate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "merminfee",
+            "type": "merminfee",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "selltable",
+            "type": "sellinfo",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sysfeerate",
+            "type": "sysfeerate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sysminfee",
+            "type": "sysminfee",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "transferlist",
+            "type": "transfer",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userfeerate",
+            "type": "userfeerate",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userminfee",
+            "type": "userminfee",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
