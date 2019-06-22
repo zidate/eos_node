@@ -1,5 +1,5 @@
 {
-    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Jun 14 16:55:51 2019",
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sat Jun 22 12:32:13 2019",
     "version": "eosio::abi/1.1",
     "structs": [
         {
@@ -1320,6 +1320,28 @@
             ]
         },
         {
+            "name": "transfertest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "trid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
             "name": "unfrozenbuy",
             "base": "",
             "fields": [
@@ -1697,6 +1719,11 @@
         {
             "name": "transfergac",
             "type": "transfergac",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfertest",
+            "type": "transfertest",
             "ricardian_contract": ""
         },
         {
